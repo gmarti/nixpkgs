@@ -33509,6 +33509,9 @@ with pkgs;
   mfcl3770cdwlpr = (callPackage ../misc/cups/drivers/brother/mfcl3770cdw { }).driver;
   mfcl3770cdwcupswrapper = (callPackage ../misc/cups/drivers/brother/mfcl3770cdw { }).cupswrapper;
 
+  mfcl8650cdwcupswrapper = callPackage ../misc/cups/drivers/mfcl8650cdwcupswrapper { };
+  mfcl8650cdwlpr = callPackage ../misc/cups/drivers/mfcl8650cdwlpr { };
+
   mfcl8690cdwcupswrapper = callPackage ../misc/cups/drivers/mfcl8690cdwcupswrapper { };
   mfcl8690cdwlpr = callPackage ../misc/cups/drivers/mfcl8690cdwlpr { };
 
