@@ -99,4 +99,5 @@ try_decompress() {
 get_imds -o "$metaDir/ami-manifest-path" "$IMDS_BASE_URL/1.0/meta-data/ami-manifest-path"
 (umask 077 && get_imds -o "$metaDir/user-data" "$IMDS_BASE_URL/1.0/user-data" && try_decompress "$metaDir/user-data")
 get_imds -o "$metaDir/hostname" "$IMDS_BASE_URL/1.0/meta-data/hostname"
+get_imds -o "$metaDir/instance-id" http://169.254.169.254/1.0/meta-data/instance-id
 get_imds -o "$metaDir/public-keys-0-openssh-key" "$IMDS_BASE_URL/1.0/meta-data/public-keys/0/openssh-key"
